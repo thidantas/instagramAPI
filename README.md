@@ -1,5 +1,3 @@
-# InstagramAPI
-
 <h1 align="center">InstagramAPI</h1>
 
 <h4 align="center">
