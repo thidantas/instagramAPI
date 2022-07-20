@@ -1,10 +1,17 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {StatusBar} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import AppRoutes from '../routes/app.routes';
 
 export default function App() {
   return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text>Hello World</Text>
-    </View>
+    <NavigationContainer>
+      <StatusBar
+        backgroundColor="#fff"
+        barStyle="dark-content"
+        transluscent={false}
+      />
+      <AppRoutes />
+    </NavigationContainer>
   );
 }
